@@ -1,0 +1,9 @@
+/* centered the picture on home page*/
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+  }
+/*tried to give background a color*/
+homePage.html{background-color: hsla(120, 100%, 50%, 0.3);}
