@@ -1,9 +1,102 @@
-/* centered the picture on home page*/
-img {
+/*font size for the heading on each page*/
+.heading{
+  color:black;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/*clear fix with image to ensure that the image is in a container/in line with other elements in the div
+I used this to also font the text on all pages*/
+.clearfix{
+  overflow:auto;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 18px;
+ }
+  .img1{
+      float:right;
+  }
+
+  /* added 3 classes to be used in multiple areas, dropbtn is menu button with properties*/
+.dropbtn{
+  color: black;
+  padding: 16px;
+  border: none;
+  font-size: 16px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: rgb(248, 246, 243);
+}
+/*dropdown is the container/box that drops down when hover mouse on it and position*/
+.dropdown{
+  position:relative;
+  display: inline-block
+}
+/*the content shows up after dropdown and displays nothing right now, properties for when it shows up
+when person hovers mouse, min-width is 80px, and position is absolute, won't move when hover occurs,
+background color*/
+.dropdown-content{
+  display: none;
+  position: absolute;
+  min-width: 80px;
+  box-shadow: 4px 20px 20px 4px rgba(0, 0, 0, 0.4);
+  z-index: 1;
+  background-color: brown;
+}
+/*properties for each a/content when diplayed in block, padding around the a content, underlined, and color */
+.dropdown-content a{
+  display: block;
+  padding: 20px 10px;
+  text-decoration-line: underline;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: black;
+}
+
+/*shows a different color to indicate my mouse is over a content a in dropdown*/
+.dropdown-content a:hover {background-color: blue;}
+
+/*once the person hovers the mouse, the content will show up under in a block*/
+.dropdown:hover .dropdown-content{display: block;}
+
+/* shows a color to indicate that my mouse is over the menu button on screen*/
+.dropdown:hover .dropbtn{background-color: rgb(160, 125, 79);}
+
+/* centered images for about, home does not since it goes through clearfix which overules this img{} and it has img1*/
+.img {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 40%;
   }
-/*tried to give background a color*/
-homePage.html{background-color: hsla(120, 100%, 50%, 0.3);}
+/*background color for all pages*/
+.body{
+  background-color: peachpuff;
+}
+
+/*added a border and color around facts, made the text align in the center and all inside*/
+#facts{
+  background-color: rgb(55, 120, 193); 
+  border-style: solid; 
+  border-color: black; 
+  border-radius: 20px;
+  padding: 15px;
+  list-style-position: inside;
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/*made ids for these since it's just for one page, to place them in the center of the page*/
+#linkHeading{
+  text-align: center;
+}
+
+#links{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*focus background color so user knows which box they fill in*/
+#textBox:focus{
+  background-color: paleturquoise;
+}
+
+/*submit button is brown*/
+#submit:hover{
+  background-color:brown;
+}
